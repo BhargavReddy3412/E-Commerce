@@ -1,0 +1,59 @@
+ 
+.Navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    position: fixed;  
+   top: 0;
+   width: 96vw;
+   left:0;
+  }
+    .Navbar h1 {
+    margin: 0;
+    font-size: 24px;
+  }
+  
+  .Navbar div {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  
+ 
+  .AllProducts-Link, 
+  .Cart-Link {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  
+ 
+  .Cart-Link svg {
+    font-size: 29px;
+  }
+
+
+  @media screen and (min-width:200px) and (max-width:425px){
+    
+    .Navbar {
+      width: 90vw;
+    }
+  }
+  @media screen and (min-width:426px) and (max-width:767px){
+    
+    .Navbar {
+      width: 89vw;
+    }
+  }
+
+
+ 
+  
+ 
+ 

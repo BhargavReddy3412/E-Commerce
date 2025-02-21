@@ -1,0 +1,87 @@
+ 
+.AllProducts-MainContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  margin-top: 50px;
+  gap: 15px;
+}
+
+.BoxContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 90%;
+  max-width: 1200px;
+  position: relative;
+}
+
+.SearchBox {
+  width: 100%;
+  max-width: 400px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+.Filter-Container {
+  position: absolute;
+  top: 50px;
+  left: 0;
+  width: 280px;
+  background: white;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.215);
+  padding: 15px;
+  border-radius: 8px;
+  opacity: 0;
+  transform: translateY(-10px);
+  z-index: -1;
+}
+
+.Filters-Container.active .Filter-Container {
+  opacity: 1;
+  transform: translateY(0);
+  z-index: 10;
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  margin: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.AllProducts-container{
+  width:100%;
+   display: flex;
+   flex-wrap: wrap;
+   gap: 20px;
+   justify-content: center; 
+   align-items: center;
+ }
+
+@media (max-width: 768px) {
+  .BoxContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .Filters-Container {
+    margin-top: 10px;
+  }
+
+  .Filter-Container {
+    width: 100%;
+    left: 0;
+    top: 40px;
+  }
+}
